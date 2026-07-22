@@ -1,0 +1,272 @@
+2026-07-18 11:31:46.722 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-18 11:31:47.123 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-18 11:31:47.125 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-18 11:31:47.254 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-18 11:31:47.256 +05:30 [INF] Hosting environment: Development
+2026-07-18 11:31:47.257 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-18 11:31:48.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-18 11:31:48.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-18 11:31:48.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-18 11:31:48.879 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 785.3426ms
+2026-07-18 11:31:48.902 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 27.3381ms
+2026-07-18 11:31:49.051 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 175.1475ms
+2026-07-18 11:31:49.092 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-18 11:31:49.167 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.5257ms
+2026-07-18 11:38:43.850 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-18 11:38:43.961 +05:30 [WRN] The WebRootPath was not found: D:\Prashant\PP\ShopSphere\ShopSphere.Api\wwwroot. Static files may be unavailable.
+2026-07-18 11:38:44.098 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-18 11:38:44.100 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-18 11:38:44.180 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-18 11:38:44.181 +05:30 [INF] Hosting environment: Development
+2026-07-18 11:38:44.182 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-18 11:38:44.640 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-18 11:38:44.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-18 11:38:44.874 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-18 11:38:44.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 245.3652ms
+2026-07-18 11:38:44.892 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 18.6307ms
+2026-07-18 11:38:44.942 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.0518ms
+2026-07-18 11:38:44.985 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-18 11:38:45.031 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 46.5612ms
+2026-07-18 11:39:09.285 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7092/api/Category - application/json 23
+2026-07-18 11:39:13.042 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.CategoryController.CreateCatagory (ShopSphere.API)'
+2026-07-18 11:39:13.136 +05:30 [INF] Route matched with {action = "CreateCatagory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateCatagory(ShopSphere.API.DTOs.CreateCategoryDto) on controller ShopSphere.API.Controllers.CategoryController (ShopSphere.API).
+2026-07-18 11:39:21.027 +05:30 [INF] Executed DbCommand (419ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2026-07-18 11:39:21.248 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-18 11:39:21.268 +05:30 [INF] Executed action ShopSphere.API.Controllers.CategoryController.CreateCatagory (ShopSphere.API) in 8112.5403ms
+2026-07-18 11:39:21.287 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.CategoryController.CreateCatagory (ShopSphere.API)'
+2026-07-18 11:39:21.309 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7092/api/Category - 200 null text/plain; charset=utf-8 12023.8099ms
+2026-07-18 11:39:29.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/api/Category - null null
+2026-07-18 11:39:29.211 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-18 11:39:29.251 +05:30 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller ShopSphere.API.Controllers.CategoryController (ShopSphere.API).
+2026-07-18 11:39:30.227 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2026-07-18 11:39:30.274 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ShopSphere.API.DTOs.CategoryDto, ShopSphere.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-18 11:39:30.308 +05:30 [INF] Executed action ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API) in 1050.9459ms
+2026-07-18 11:39:30.317 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-18 11:39:30.320 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/api/Category - 200 null application/json; charset=utf-8 1131.0958ms
+2026-07-18 11:41:35.803 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7092/api/Product - multipart/form-data; boundary=----WebKitFormBoundaryonZEzefX7Bpj5Zep 171732
+2026-07-18 11:41:35.831 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:41:35.852 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(ShopSphere.API.DTOs.CreateProductDto) on controller ShopSphere.API.Controllers.ProductController (ShopSphere.API).
+2026-07-18 11:41:36.624 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__dto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__dto_CategoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-18 11:41:36.982 +05:30 [INF] Executed action ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API) in 1124.1335ms
+2026-07-18 11:41:36.990 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:41:37.217 +05:30 [ERR] Unhandled Exception Occurred
+System.ArgumentNullException: Value cannot be null. (Parameter 'path1')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.IO.Path.Combine(String path1, String path2, String path3)
+   at ShopSphere.API.Services.FileService.UploadFileAsync(IFormFile file, String folderName) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Services\FileService.cs:line 46
+   at ShopSphere.API.Services.ProductService.CreateProductAsync(CreateProductDto dto) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Services\ProductService.cs:line 40
+   at ShopSphere.API.Controllers.ProductController.CreateProduct(CreateProductDto productDto) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Controllers\ProductController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ShopSphere.API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2026-07-18 11:41:37.394 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7092/api/Product - 500 null application/json 1590.5915ms
+2026-07-18 11:42:12.664 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7092/api/Product - multipart/form-data; boundary=----WebKitFormBoundary89sed3kqECuxf2sd 171732
+2026-07-18 11:42:12.690 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:42:12.694 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(ShopSphere.API.DTOs.CreateProductDto) on controller ShopSphere.API.Controllers.ProductController (ShopSphere.API).
+2026-07-18 11:42:12.783 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__dto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__dto_CategoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-18 11:42:22.994 +05:30 [INF] Executed action ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API) in 10293.7017ms
+2026-07-18 11:42:23.000 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:42:23.043 +05:30 [ERR] Unhandled Exception Occurred
+System.ArgumentNullException: Value cannot be null. (Parameter 'path1')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.IO.Path.Combine(String path1, String path2, String path3)
+   at ShopSphere.API.Services.FileService.UploadFileAsync(IFormFile file, String folderName) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Services\FileService.cs:line 46
+   at ShopSphere.API.Services.ProductService.CreateProductAsync(CreateProductDto dto) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Services\ProductService.cs:line 40
+   at ShopSphere.API.Controllers.ProductController.CreateProduct(CreateProductDto productDto) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Controllers\ProductController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ShopSphere.API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2026-07-18 11:42:23.059 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7092/api/Product - 500 null application/json 10394.5942ms
+2026-07-18 11:42:25.544 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7092/api/Product - multipart/form-data; boundary=----WebKitFormBoundary5JHDkkAJzc6vszYG 171732
+2026-07-18 11:42:25.554 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:42:25.557 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(ShopSphere.API.DTOs.CreateProductDto) on controller ShopSphere.API.Controllers.ProductController (ShopSphere.API).
+2026-07-18 11:42:34.506 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__dto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__dto_CategoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-18 11:43:07.886 +05:30 [INF] Executed action ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API) in 42325.2292ms
+2026-07-18 11:43:07.889 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:43:07.981 +05:30 [ERR] Unhandled Exception Occurred
+System.ArgumentNullException: Value cannot be null. (Parameter 'path1')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.IO.Path.Combine(String path1, String path2, String path3)
+   at ShopSphere.API.Services.FileService.UploadFileAsync(IFormFile file, String folderName) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Services\FileService.cs:line 46
+   at ShopSphere.API.Services.ProductService.CreateProductAsync(CreateProductDto dto) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Services\ProductService.cs:line 40
+   at ShopSphere.API.Controllers.ProductController.CreateProduct(CreateProductDto productDto) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Controllers\ProductController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ShopSphere.API.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context) in D:\Prashant\PP\ShopSphere\ShopSphere.Api\Middleware\ExceptionHandlingMiddleware.cs:line 24
+2026-07-18 11:43:08.005 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7092/api/Product - 500 null application/json 42459.5586ms
+2026-07-18 11:43:09.863 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7092/api/Product - multipart/form-data; boundary=----WebKitFormBoundarym9qishNOvmbeBXWr 171732
+2026-07-18 11:43:09.876 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:43:09.878 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(ShopSphere.API.DTOs.CreateProductDto) on controller ShopSphere.API.Controllers.ProductController (ShopSphere.API).
+2026-07-18 11:43:11.080 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__dto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__dto_CategoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-18 11:45:32.009 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-18 11:45:32.223 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-18 11:45:32.231 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-18 11:45:32.313 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-18 11:45:32.319 +05:30 [INF] Hosting environment: Development
+2026-07-18 11:45:32.325 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-18 11:45:32.627 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-18 11:45:32.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-18 11:45:32.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-18 11:45:32.847 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 227.8147ms
+2026-07-18 11:45:32.857 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 12.9419ms
+2026-07-18 11:45:32.896 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.5179ms
+2026-07-18 11:45:32.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-18 11:45:32.959 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.5066ms
+2026-07-18 11:46:07.634 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7092/api/Product - multipart/form-data; boundary=----WebKitFormBoundaryLhBPfEPlRSitWIKc 171732
+2026-07-18 11:46:07.851 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:46:07.940 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(ShopSphere.API.DTOs.CreateProductDto) on controller ShopSphere.API.Controllers.ProductController (ShopSphere.API).
+2026-07-18 11:46:13.049 +05:30 [INF] Executed DbCommand (99ms) [Parameters=[@__dto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__dto_CategoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-18 11:47:12.749 +05:30 [INF] Executed DbCommand (78ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 500), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [Description], [ImageUrl], [Name], [Price], [Stock])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-07-18 11:47:30.217 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-07-18 11:47:30.234 +05:30 [INF] Executed action ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API) in 82276.723ms
+2026-07-18 11:47:30.239 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 11:47:30.272 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7092/api/Product - 204 null null 82637.7631ms
+2026-07-18 11:47:53.812 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/uploads/products/4255f0c0-9983-4264-9ccf-9776850c80b8.png - null null
+2026-07-18 11:47:53.980 +05:30 [INF] Sending file. Request path: '/uploads/products/4255f0c0-9983-4264-9ccf-9776850c80b8.png'. Physical path: 'D:\Prashant\PP\ShopSphere\ShopSphere.Api\wwwroot\uploads\products\4255f0c0-9983-4264-9ccf-9776850c80b8.png'
+2026-07-18 11:47:53.988 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/uploads/products/4255f0c0-9983-4264-9ccf-9776850c80b8.png - 200 171043 image/png 175.5085ms
+2026-07-18 11:47:54.005 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/favicon.ico - null null
+2026-07-18 11:47:54.017 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/favicon.ico - 404 0 null 12.7377ms
+2026-07-18 11:47:54.027 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7092/favicon.ico, Response status code: 404
+2026-07-18 12:15:06.285 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-18 12:15:07.034 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-18 12:15:07.039 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-18 12:15:07.291 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-18 12:15:07.296 +05:30 [INF] Hosting environment: Development
+2026-07-18 12:15:07.302 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-18 12:15:07.495 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-18 12:15:08.202 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-18 12:15:08.202 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-18 12:15:08.210 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 744.1928ms
+2026-07-18 12:15:08.253 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 50.5526ms
+2026-07-18 12:15:08.386 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 183.8435ms
+2026-07-18 12:15:08.428 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-18 12:15:08.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.1879ms
+2026-07-18 12:16:01.735 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7092/api/Product - multipart/form-data; boundary=----WebKitFormBoundaryzbdlxsTm7ycIpEeC 171728
+2026-07-18 12:16:05.761 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 12:16:05.904 +05:30 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProduct(ShopSphere.API.DTOs.CreateProductDto) on controller ShopSphere.API.Controllers.ProductController (ShopSphere.API).
+2026-07-18 12:16:13.862 +05:30 [INF] Executed DbCommand (349ms) [Parameters=[@__dto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Categories] AS [c]
+        WHERE [c].[Id] = @__dto_CategoryId_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-07-18 12:16:44.940 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 500), @p2='?' (Size = 4000), @p3='?' (Size = 100), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([CategoryId], [Description], [ImageUrl], [Name], [Price], [Stock])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-07-18 12:16:45.036 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-07-18 12:16:45.056 +05:30 [INF] Executed action ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API) in 39133.7552ms
+2026-07-18 12:16:45.064 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.ProductController.CreateProduct (ShopSphere.API)'
+2026-07-18 12:16:45.103 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7092/api/Product - 204 null null 43368.102ms
+2026-07-18 14:06:04.024 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-18 14:06:04.805 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-18 14:06:04.811 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-18 14:06:05.122 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-18 14:06:05.126 +05:30 [INF] Hosting environment: Development
+2026-07-18 14:06:05.130 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-18 14:06:05.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-18 14:06:06.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-18 14:06:06.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-18 14:06:06.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 805.0521ms
+2026-07-18 14:06:06.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 75.5732ms
+2026-07-18 14:06:06.380 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 162.3118ms
+2026-07-18 14:06:06.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-18 14:06:06.488 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.6912ms
+2026-07-18 14:06:41.946 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/api/Category - null null
+2026-07-18 14:06:45.845 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-18 14:06:45.924 +05:30 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller ShopSphere.API.Controllers.CategoryController (ShopSphere.API).
+2026-07-18 14:06:52.819 +05:30 [INF] Executed DbCommand (126ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2026-07-18 14:06:58.350 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ShopSphere.API.DTOs.CategoryDto, ShopSphere.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-18 14:06:58.389 +05:30 [INF] Executed action ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API) in 12445.7411ms
+2026-07-18 14:06:58.395 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-18 14:06:58.426 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/api/Category - 200 null application/json; charset=utf-8 16480.0599ms
+2026-07-18 14:07:06.227 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/api/Category - null null
+2026-07-18 14:07:06.243 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-18 14:07:06.256 +05:30 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller ShopSphere.API.Controllers.CategoryController (ShopSphere.API).
+2026-07-18 14:07:13.357 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ShopSphere.API.DTOs.CategoryDto, ShopSphere.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-18 14:07:13.368 +05:30 [INF] Executed action ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API) in 7104.447ms
+2026-07-18 14:07:13.377 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-18 14:07:13.383 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/api/Category - 200 null application/json; charset=utf-8 7156.5033ms

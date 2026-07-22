@@ -1,0 +1,80 @@
+2026-07-16 09:21:37.056 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-16 09:21:37.106 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-16 09:21:37.109 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-16 09:21:37.110 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-16 09:21:37.136 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-16 09:21:37.147 +05:30 [INF] Applying migration '20260716035120_AddRefreshToken'.
+2026-07-16 09:21:37.205 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Users] ADD [RefreshToken] nvarchar(max) NULL;
+2026-07-16 09:21:37.210 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Users] ADD [RefreshTokenExpiryTime] datetime2 NULL;
+2026-07-16 09:21:37.219 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260716035120_AddRefreshToken', N'8.0.28');
+2026-07-16 21:29:04.115 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-16 21:29:04.522 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-16 21:29:04.525 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-16 21:29:04.619 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-16 21:29:04.621 +05:30 [INF] Hosting environment: Development
+2026-07-16 21:29:04.624 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-16 21:29:05.400 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-16 21:29:06.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-16 21:29:06.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-16 21:29:06.196 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 825.5534ms
+2026-07-16 21:29:06.216 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 27.4314ms
+2026-07-16 21:29:06.366 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 177.985ms
+2026-07-16 21:29:06.406 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-16 21:29:06.468 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 61.9963ms
+2026-07-16 23:48:26.601 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-16 23:48:26.655 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-16 23:48:26.661 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-07-16 23:48:26.664 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-07-16 23:48:26.702 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-07-16 23:48:26.715 +05:30 [INF] Applying migration '20260716181801_AddImageUrlInProduct'.
+2026-07-16 23:48:26.763 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE [Products] ADD [ImageUrl] nvarchar(max) NULL;
+2026-07-16 23:48:26.770 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260716181801_AddImageUrlInProduct', N'8.0.28');
+2026-07-16 23:52:17.452 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-16 23:52:17.730 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-16 23:52:17.731 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-16 23:52:17.900 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-16 23:52:17.905 +05:30 [INF] Hosting environment: Development
+2026-07-16 23:52:17.909 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-16 23:52:18.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-16 23:52:19.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-16 23:52:19.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-16 23:52:19.348 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 737.1969ms
+2026-07-16 23:52:19.384 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 39.9547ms
+2026-07-16 23:52:19.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 126.8916ms
+2026-07-16 23:52:19.526 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-16 23:52:19.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 70.3754ms
+2026-07-16 23:56:02.674 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-16 23:56:03.352 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-16 23:56:03.358 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-16 23:56:03.756 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-16 23:56:03.760 +05:30 [INF] Hosting environment: Development
+2026-07-16 23:56:03.763 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-16 23:56:04.138 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-16 23:56:04.874 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 768.4499ms
+2026-07-16 23:56:04.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-16 23:56:04.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-16 23:56:04.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 32.3558ms
+2026-07-16 23:56:05.065 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 182.2616ms
+2026-07-16 23:56:05.130 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-16 23:56:05.199 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 69.2979ms
