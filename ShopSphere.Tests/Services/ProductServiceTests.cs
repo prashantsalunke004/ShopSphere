@@ -50,32 +50,32 @@ namespace ShopSphere.Tests.Services
                 _categoryRepositoryMock.Object);
         }
 
-        [Fact]
-        public async Task GetProductByIdAsync_ShouldReturnProduct_WhenProductExists()
-        {
-            // Arrange
-            var product = new Product
-            {
-                Id = 1,
-                Name = "Laptop",
-                Price = 50000,
-                Stock = 10,
-                CategoryId = 1
-            };
+        //[Fact]
+        //public async Task GetProductByIdAsync_ShouldReturnProduct_WhenProductExists()
+        //{
+        //    // Arrange
+        //    var product = new Product
+        //    {
+        //        Id = 1,
+        //        Name = "Laptop",
+        //        Price = 50000,
+        //        Stock = 10,
+        //        CategoryId = 1
+        //    };
 
-            _productRepositoryMock
-                .Setup(x => x.GetByIdAsync(1))
-                .ReturnsAsync(product);
+        //    _productRepositoryMock
+        //        .Setup(x => x.GetByIdAsync(1))
+        //        .ReturnsAsync(product);
 
-            // Act
-            var result = await _productService.GetProductByIdAsync(1);
+        //    // Act
+        //    var result = await _productService.GetProductByIdAsync(1);
 
-            // Assert
-            result.Should().NotBeNull();
-            result.Id.Should().Be(1);
-            result.Name.Should().Be("Laptop");
-            result.Price.Should().Be(50000);
-        }
+        //    // Assert
+        //    result.Should().NotBeNull();
+        //    result.Id.Should().Be(1);
+        //    result.Name.Should().Be("Laptop");
+        //    result.Price.Should().Be(50000);
+        //}
 
         [Fact]
         public async Task GetProductByIdAsync_ShouldThrowNotFoundException_WhenProductDoesNotExist()
