@@ -5,6 +5,8 @@ using ShopSphere.API.DTOs;
 using ShopSphere.API.Interfaces;
 using ShopSphere.API.Models;
 using System.ComponentModel;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 
 namespace ShopSphere.API.Services
 {
@@ -12,19 +14,22 @@ namespace ShopSphere.API.Services
     {
         private readonly AppDbContext _context;
         private readonly IMemoryCache _memoryCache;
+        private readonly IMapper _mapper;
         private const string CategoryCacheKey = "Category";
-        public CategoryService(AppDbContext context, IMemoryCache memoryCache)
+        public CategoryService(AppDbContext context, IMemoryCache memoryCache, IMapper mapper)
         {
             _context = context;
             _memoryCache = memoryCache;
+            _mapper = mapper;
         }
 
         public async Task CreateCategoryAsync(CreateCategoryDto categoryDto)
         {
-            var category = new Category
-            {
-                Name = categoryDto.Name
-            };
+            //var category = new Category
+            //{
+            //    Name = categoryDto.Name
+            //};
+            var category = _mapper.Map<Category>(categoryDto);
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
             _memoryCache.Remove(CategoryCacheKey);
@@ -37,12 +42,14 @@ namespace ShopSphere.API.Services
                 return cachedCategory;
             }
 
-            var categories = await _context.Categories.AsNoTracking().Select(c => new CategoryDto
-            {
-                Id = c.Id,
-                Name = c.Name,
+            //var categories = await _context.Categories.AsNoTracking().Select(c => new CategoryDto
+            //{
+            //    Id = c.Id,
+            //    Name = c.Name,
 
-            }).ToListAsync();
+            //}).ToListAsync();
+
+            var categories = await _context.Categories.AsNoTracking().ProjectTo<CategoryDto>(_mapper.ConfigurationProvider).ToListAsync();
 
             _memoryCache.Set(CategoryCacheKey, categories,TimeSpan.FromMinutes(10));
 
@@ -52,12 +59,13 @@ namespace ShopSphere.API.Services
 
         public async Task<CategoryDto?> GetCategoryByIdAsync(int id)
         {
-            var category = await _context.Categories.AsNoTracking().Where(c => c.Id == id).Select(c => new CategoryDto
-            {
-                Id = c.Id,
-                Name = c.Name,
+            //var category = await _context.Categories.AsNoTracking().Where(c => c.Id == id).Select(c => new CategoryDto
+            //{
+            //    Id = c.Id,
+            //    Name = c.Name,
 
-            }).FirstOrDefaultAsync();
+            //}).FirstOrDefaultAsync();
+            var category = await _context.Categories.AsNoTracking().Where(c => c.Id == id).ProjectTo<CategoryDto>(_mapper.ConfigurationProvider).FirstOrDefaultAsync();
             return category;
         }
 
@@ -68,7 +76,8 @@ namespace ShopSphere.API.Services
             {
                 return false;
             }
-            category.Name = categoryDto.Name;
+            //category.Name = categoryDto.Name;
+            _mapper.Map(categoryDto,category);
 
             await _context.SaveChangesAsync();
             _memoryCache.Remove(CategoryCacheKey);
