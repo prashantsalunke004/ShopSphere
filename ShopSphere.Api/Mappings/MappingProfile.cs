@@ -11,6 +11,7 @@ namespace ShopSphere.API.Mappings
             CreateMap<Category, CategoryDto>();
             CreateMap<CreateCategoryDto, Category>();
             CreateMap<UpdateCategoryDto, Category>();
+
             CreateMap<Product, ProductDto>().ForMember(dest=>dest.CategoryName,opt=>opt.MapFrom(src=>src.Category.Name));
             CreateMap<CreateProductDto, Product>();
             //CreateMap<UpdateProductDto, Product>();

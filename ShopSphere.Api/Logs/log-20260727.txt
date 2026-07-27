@@ -1,0 +1,35 @@
+2026-07-27 23:38:08.447 +05:30 [INF] User profile is available. Using 'C:\Users\EZC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-27 23:38:08.879 +05:30 [INF] Now listening on: https://localhost:7092
+2026-07-27 23:38:08.883 +05:30 [INF] Now listening on: http://localhost:5246
+2026-07-27 23:38:08.966 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-27 23:38:08.975 +05:30 [INF] Hosting environment: Development
+2026-07-27 23:38:08.978 +05:30 [INF] Content root path: D:\Prashant\PP\ShopSphere\ShopSphere.Api
+2026-07-27 23:38:10.218 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/index.html - null null
+2026-07-27 23:38:11.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/index.html - 200 null text/html;charset=utf-8 1094.969ms
+2026-07-27 23:38:11.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-27 23:38:11.279 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/_vs/browserLink - null null
+2026-07-27 23:38:11.320 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 41.6045ms
+2026-07-27 23:38:11.562 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/_vs/browserLink - 200 null text/javascript; charset=UTF-8 283.0824ms
+2026-07-27 23:38:11.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - null null
+2026-07-27 23:38:11.722 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.6731ms
+2026-07-27 23:38:19.981 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/api/Category - null null
+2026-07-27 23:38:24.692 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-27 23:38:24.810 +05:30 [INF] Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategories() on controller ShopSphere.API.Controllers.CategoryController (ShopSphere.API).
+2026-07-27 23:38:34.873 +05:30 [INF] Executed DbCommand (211ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2026-07-27 23:38:35.040 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[ShopSphere.API.DTOs.CategoryDto, ShopSphere.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-27 23:38:35.083 +05:30 [INF] Executed action ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API) in 10247.9267ms
+2026-07-27 23:38:35.093 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategories (ShopSphere.API)'
+2026-07-27 23:38:35.123 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/api/Category - 200 null application/json; charset=utf-8 15142.009ms
+2026-07-27 23:38:57.486 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7092/api/Category/4 - null null
+2026-07-27 23:38:57.519 +05:30 [INF] Executing endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategoryById (ShopSphere.API)'
+2026-07-27 23:38:57.563 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller ShopSphere.API.Controllers.CategoryController (ShopSphere.API).
+2026-07-27 23:38:58.322 +05:30 [INF] Executed DbCommand (341ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2026-07-27 23:38:58.343 +05:30 [INF] Executing OkObjectResult, writing value of type 'ShopSphere.API.DTOs.CategoryDto'.
+2026-07-27 23:38:58.351 +05:30 [INF] Executed action ShopSphere.API.Controllers.CategoryController.GetCategoryById (ShopSphere.API) in 777.494ms
+2026-07-27 23:38:58.361 +05:30 [INF] Executed endpoint 'ShopSphere.API.Controllers.CategoryController.GetCategoryById (ShopSphere.API)'
+2026-07-27 23:38:58.367 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7092/api/Category/4 - 200 null application/json; charset=utf-8 881.5976ms
