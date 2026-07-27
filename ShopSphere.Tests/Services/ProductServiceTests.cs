@@ -57,7 +57,7 @@ namespace ShopSphere.Tests.Services
             var product = new Product
             {
                 Id = 1,
-                Name = "Mobile",
+                Name = "Laptop",
                 Price = 50000,
                 Stock = 10,
                 CategoryId = 1
