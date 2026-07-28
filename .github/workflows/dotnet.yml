@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
   pull_request:
     branches:
       - main
@@ -15,27 +16,27 @@ jobs:
 
     steps:
 
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup .NET
+      - name: Setup .NET 8
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore Packages
-        run: dotnet restore
+      - name: Restore NuGet Packages
+        run: dotnet restore ShopSphere.sln
 
-      - name: Build
-        run: dotnet build --no-restore
+      - name: Build Solution
+        run: dotnet build ShopSphere.sln --configuration Release --no-restore
 
-      - name: Run Tests
-        run: dotnet test --no-build
+      - name: Run Unit Tests
+        run: dotnet test ShopSphere.sln --configuration Release --no-build
 
-	- name: Publish Application
-        run: dotnet publish ShopSphere.sln -c Release -o publish
+      - name: Publish Application
+        run: dotnet publish ShopSphere.Api/ShopSphere.API.csproj --configuration Release --no-build --output publish
 
-	- name: Upload Build Artifact
+      - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
         with:
           name: ShopSphere-Publish
