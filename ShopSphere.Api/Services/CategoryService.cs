@@ -16,11 +16,13 @@ namespace ShopSphere.API.Services
         private readonly IMemoryCache _memoryCache;
         private readonly IMapper _mapper;
         private const string CategoryCacheKey = "Category";
-        public CategoryService(AppDbContext context, IMemoryCache memoryCache, IMapper mapper)
+        private readonly ILogger _logger;
+        public CategoryService(AppDbContext context, IMemoryCache memoryCache, IMapper mapper,ILogger logger)
         {
             _context = context;
             _memoryCache = memoryCache;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public async Task CreateCategoryAsync(CreateCategoryDto categoryDto)
@@ -32,6 +34,7 @@ namespace ShopSphere.API.Services
             var category = _mapper.Map<Category>(categoryDto);
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
+            _logger.LogInformation("Category Created Successfully");
             _memoryCache.Remove(CategoryCacheKey);
         }
 
@@ -52,7 +55,7 @@ namespace ShopSphere.API.Services
             var categories = await _context.Categories.AsNoTracking().ProjectTo<CategoryDto>(_mapper.ConfigurationProvider).ToListAsync();
 
             _memoryCache.Set(CategoryCacheKey, categories,TimeSpan.FromMinutes(10));
-
+            _logger.LogInformation("Fetched All Categories and Saved In Cache also");
             return categories;
 
         }
@@ -80,6 +83,7 @@ namespace ShopSphere.API.Services
             _mapper.Map(categoryDto,category);
 
             await _context.SaveChangesAsync();
+            _logger.LogInformation("Category Updated of Id:{categoryId}", id);
             _memoryCache.Remove(CategoryCacheKey);
             return true;
 
@@ -95,6 +99,7 @@ namespace ShopSphere.API.Services
             }
             _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
+            _logger.LogInformation("Category Deleted of Id:{categoryId}" , id);
             _memoryCache.Remove(CategoryCacheKey);
             return true;
 
