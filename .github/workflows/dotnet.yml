@@ -19,6 +19,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+- name: Read Secret
+        env:
+          MY_SECRET: ${{ secrets.MY_FIRST_SECRET }}
+        run: echo "Secret Loaded Successfully"
+
       - name: Setup .NET 8
         uses: actions/setup-dotnet@v4
         with:
