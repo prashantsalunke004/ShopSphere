@@ -31,3 +31,12 @@ jobs:
 
       - name: Run Tests
         run: dotnet test --no-build
+
+	- name: Publish Application
+        run: dotnet publish ShopSphere.sln -c Release -o publish
+
+	- name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShopSphere-Publish
+          path: publish
