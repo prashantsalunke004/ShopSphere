@@ -19,7 +19,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-- name: Read Secret
+      - name: Read Secret
         env:
           MY_SECRET: ${{ secrets.MY_FIRST_SECRET }}
         run: echo "Secret Loaded Successfully"
